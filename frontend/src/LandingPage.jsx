@@ -426,13 +426,11 @@ const Footer = () => (
         
         <div>
           <h4 className="font-mono text-xs tracking-[0.25em] text-gold-400 uppercase mb-6">Marcas que confían en nosotros</h4>
-          <div className="grid grid-cols-3 gap-4">
-            {['Honda', 'Ford', 'Peugeot', 'Motorola', 'Samsung', 'Absolut', 'Quilmes', 'Budweiser', 'Corona'].map((brand, i) => (
-              <div key={i} className="p-3 border border-white/5 text-center">
-                <span className="text-text-secondary text-sm">{brand}</span>
-              </div>
-            ))}
-          </div>
+          <img 
+            src="https://customer-assets.emergentagent.com/job_editorial-impact-2/artifacts/egvmmayy_szya9zmc_Screenshot%202026-02-02%20at%2012.03.04%E2%80%AFPM.png"
+            alt="Clientes: Honda, Ford, Peugeot, Motorola, Lenovo, Samsung, Absolut, Beefeater, Chivas, Quilmes, Mumm y más"
+            className="w-full rounded opacity-90"
+          />
         </div>
       </div>
       
