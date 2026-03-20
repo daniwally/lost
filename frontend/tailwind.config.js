@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -28,9 +25,6 @@ export default {
         display: ['Playfair Display', 'serif'],
         body: ['Manrope', 'sans-serif'],
         mono: ['JetBrains Mono', 'monospace'],
-      },
-      letterSpacing: {
-        'ultra-wide': '0.25em',
       },
     },
   },
