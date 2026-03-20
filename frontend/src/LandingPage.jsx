@@ -46,7 +46,7 @@ const HeroSection = () => (
       <img 
         src="https://customer-assets.emergentagent.com/job_editorial-impact-2/artifacts/ppybzi5e_logo-wtf.png" 
         alt="WTF Agency - Brief Destroyers"
-        className="h-12 md:h-16 w-auto"
+        className="h-14 md:h-[72px] w-auto"
       />
     </div>
     
@@ -410,7 +410,7 @@ const Footer = () => (
       <img 
         src="https://customer-assets.emergentagent.com/job_editorial-impact-2/artifacts/ppybzi5e_logo-wtf.png" 
         alt="WTF Agency"
-        className="h-10 w-auto opacity-70"
+        className="h-11 w-auto opacity-70"
       />
       <span className="font-mono text-xs text-text-secondary">
         © 2025 WTF Agency — Propuesta confidencial para Lost Atelier
