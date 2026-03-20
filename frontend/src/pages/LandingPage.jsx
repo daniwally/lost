@@ -46,6 +46,15 @@ const HeroSection = () => (
       <div className="absolute inset-0 bg-gradient-to-r from-[#050505]/60 to-transparent" />
     </div>
     
+    {/* Logo WTF Agency - Top */}
+    <div className="absolute top-8 left-6 md:left-12 lg:left-24 z-20">
+      <img 
+        src="https://customer-assets.emergentagent.com/job_editorial-impact-2/artifacts/ppybzi5e_logo-wtf.png" 
+        alt="WTF Agency - Brief Destroyers"
+        className="h-12 md:h-16 w-auto"
+      />
+    </div>
+    
     {/* Content */}
     <div className="relative z-10 px-6 md:px-12 lg:px-24 max-w-7xl">
       <motion.div
@@ -421,7 +430,12 @@ const ContactSection = () => (
 // Footer
 const Footer = () => (
   <footer className="py-8 px-6 md:px-12 lg:px-24 border-t border-white/5">
-    <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+    <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <img 
+        src="https://customer-assets.emergentagent.com/job_editorial-impact-2/artifacts/ppybzi5e_logo-wtf.png" 
+        alt="WTF Agency"
+        className="h-10 w-auto opacity-70"
+      />
       <span className="font-mono text-xs text-text-secondary">
         © 2025 WTF Agency — Propuesta confidencial para Lost Atelier
       </span>
