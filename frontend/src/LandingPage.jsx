@@ -405,19 +405,46 @@ const ContactSection = () => (
 );
 
 const Footer = () => (
-  <footer className="py-8 px-6 md:px-12 lg:px-24 border-t border-white/5">
-    <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-      <img 
-        src="https://customer-assets.emergentagent.com/job_editorial-impact-2/artifacts/ppybzi5e_logo-wtf.png" 
-        alt="WTF Agency"
-        className="h-11 w-auto opacity-70"
-      />
-      <span className="font-mono text-xs text-text-secondary">
-        © 2025 WTF Agency — Propuesta confidencial para Lost Atelier
-      </span>
-      <span className="font-display text-sm text-gold-400">
-        Artesanía con alma
-      </span>
+  <footer className="py-16 px-6 md:px-12 lg:px-24 bg-surface border-t border-white/5">
+    <div className="max-w-7xl mx-auto">
+      {/* About WTF Section */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+        <div>
+          <img 
+            src="https://customer-assets.emergentagent.com/job_editorial-impact-2/artifacts/ppybzi5e_logo-wtf.png" 
+            alt="WTF Agency"
+            className="h-14 w-auto mb-6"
+          />
+          <h3 className="font-display text-2xl text-text-primary mb-4">Brief Destroyers</h3>
+          <p className="text-text-secondary leading-relaxed mb-4">
+            No somos una agencia. Somos un sistema. Construimos plataformas, sistemas creativos y ecosistemas de contenido que se adaptan, aprenden y escalan.
+          </p>
+          <p className="text-text-secondary text-sm">
+            <span className="text-gold-400 font-semibold">15+ años</span> de experiencia • <span className="text-gold-400 font-semibold">6 oficinas</span> en Latam y España • <span className="text-gold-400 font-semibold">50+ células</span> creativas
+          </p>
+        </div>
+        
+        <div>
+          <h4 className="font-mono text-xs tracking-[0.25em] text-gold-400 uppercase mb-6">Marcas que confían en nosotros</h4>
+          <div className="grid grid-cols-3 gap-4">
+            {['Honda', 'Ford', 'Peugeot', 'Motorola', 'Samsung', 'Absolut', 'Quilmes', 'Budweiser', 'Corona'].map((brand, i) => (
+              <div key={i} className="p-3 border border-white/5 text-center">
+                <span className="text-text-secondary text-sm">{brand}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      
+      {/* Footer bottom */}
+      <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
+        <span className="font-mono text-xs text-text-secondary">
+          © 2025 WTF Agency — Propuesta confidencial para Lost Atelier
+        </span>
+        <span className="font-display text-sm text-gold-400">
+          Artesanía con alma
+        </span>
+      </div>
     </div>
   </footer>
 );
