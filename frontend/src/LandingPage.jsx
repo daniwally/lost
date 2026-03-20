@@ -449,7 +449,6 @@ const LandingPage = () => {
       <MethodologySection />
       <InvestmentSection />
       <DeliverablesSection />
-      <ContactSection />
       <Footer />
     </div>
   );
