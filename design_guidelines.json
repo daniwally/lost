@@ -1,0 +1,122 @@
+{
+  "theme": "dark",
+  "typography": {
+    "headings": {
+      "font_family": "Playfair Display, serif",
+      "weights": ["400", "700"],
+      "letter_spacing": "tracking-tight",
+      "usage": "Use for all H1-H3. H1 should be text-5xl to text-7xl."
+    },
+    "body": {
+      "font_family": "Manrope, sans-serif",
+      "weights": ["300", "400", "500"],
+      "usage": "Use for paragraphs, labels, and UI elements."
+    },
+    "mono": {
+      "font_family": "JetBrains Mono, monospace",
+      "usage": "Use for small labels, prices, or technical details."
+    }
+  },
+  "colors": {
+    "background": "#050505",
+    "surface": "#121212",
+    "surface_highlight": "#1E1E1E",
+    "primary": "#722F37",
+    "secondary": "#C5A059",
+    "text_primary": "#F5F5F0",
+    "text_secondary": "#A1A1AA",
+    "border": "#27272A",
+    "accent": "#591C23"
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-md bg-black/40 border border-white/10",
+    "gradients": {
+      "hero_overlay": "bg-gradient-to-t from-black via-black/50 to-transparent",
+      "gold_shimmer": "bg-gradient-to-r from-transparent via-[#C5A059]/30 to-transparent"
+    },
+    "shadows": {
+      "card": "shadow-[0_8px_30px_rgb(0,0,0,0.12)]",
+      "glow": "drop-shadow-[0_0_15px_rgba(197,160,89,0.2)]"
+    }
+  },
+  "layout_strategies": {
+    "container_padding": "px-6 md:px-12 lg:px-24",
+    "section_spacing": "py-24 md:py-32",
+    "grid_system": "grid grid-cols-1 md:grid-cols-12 gap-8",
+    "hero_alignment": "Align text bottom-left or center with massive negative space."
+  },
+  "components": {
+    "button": {
+      "styles": "rounded-none px-8 py-6 text-sm uppercase tracking-widest font-semibold transition-all duration-300",
+      "variants": {
+        "primary": "bg-[#C5A059] text-black hover:bg-[#D4AF37]",
+        "outline": "border border-[#C5A059] text-[#C5A059] hover:bg-[#C5A059] hover:text-black bg-transparent"
+      }
+    },
+    "card": {
+      "styles": "rounded-sm border border-white/5 bg-white/5 backdrop-blur-sm p-8 hover:border-[#C5A059]/30 transition-colors"
+    },
+    "separator": {
+      "styles": "bg-white/10 h-[1px] w-full my-8"
+    }
+  },
+  "image_urls": {
+    "hero_background": {
+      "url": "https://images.pexels.com/photos/2440529/pexels-photo-2440529.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "alt": "Dimly lit wine cellar with barrels",
+      "usage": "Full screen background for Hero section with heavy overlay."
+    },
+    "texture_wood": {
+      "url": "https://images.unsplash.com/photo-1736506159893-22cca29b8018?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTV8MHwxfHNlYXJjaHw0fHxjcmFmdHNtYW4lMjBjYXJ2aW5nJTIwd29vZCUyMHdpbmUlMjBiYXJyZWwlMjBkYXJrJTIwbW9vZHl8ZW58MHx8fHwxNzc0MDE1OTcwfDA&ixlib=rb-4.1.0&q=85",
+      "alt": "Dark wood grain texture",
+      "usage": "Background for Diagnosis or Investment section."
+    },
+    "product_showcase_1": {
+      "url": "https://images.unsplash.com/photo-1692216709277-66423615df1b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjB3b29kZW4lMjBjaGFpciUyMGRhcmslMjBzdHVkaW8lMjBsaWdodGluZyUyMGNpbmVtYXRpY3xlbnwwfHx8fDE3NzQwMTU5ODR8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Luxury chair in dark room",
+      "usage": "Showcase section, perhaps with parallax effect."
+    },
+    "product_detail": {
+      "url": "https://images.unsplash.com/photo-1601811617286-1a57da60328f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjB3b29kZW4lMjBjaGFpciUyMGRhcmslMjBzdHVkaW8lMjBsaWdodGluZyUyMGNpbmVtYXRpY3xlbnwwfHx8fDE3NzQwMTU5ODR8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Wooden chair detail",
+      "usage": "Detail shot in Methodology or About section."
+    }
+  },
+  "motion": {
+    "library": "framer-motion",
+    "scroll": "lenis",
+    "entrance": {
+      "initial": { "opacity": 0, "y": 20 },
+      "animate": { "opacity": 1, "y": 0 },
+      "transition": { "duration": 0.8, "ease": [0.22, 1, 0.36, 1] }
+    },
+    "stagger": {
+      "container": { "hidden": { "opacity": 0 }, "show": { "opacity": 1, "transition": { "staggerChildren": 0.1 } } },
+      "item": { "hidden": { "opacity": 0, "y": 20 }, "show": { "opacity": 1, "y": 0 } }
+    }
+  },
+  "instructions_to_main_agent": [
+    "Install 'lenis' for smooth scrolling immediately.",
+    "Install 'framer-motion' for animations.",
+    "Add 'Playfair Display' and 'Manrope' from Google Fonts via import in index.css.",
+    "Configure Tailwind colors to match the palette exactly.",
+    "Create a single page layout (LandingPage.jsx).",
+    "Section 1: Hero - Use 'hero_background' image. Title: 'LOST ATELIER'. Sub: 'Strategic Consulting Proposal'.",
+    "Section 2: Diagnosis - Dark/Stark contrast. List the core problems identified.",
+    "Section 3: Value Prop & Services - Grid layout using 'product_showcase_1'.",
+    "Section 4: Methodology - Vertical timeline. 3 Fases (45 Days).",
+    "Section 5: Investment - Minimalist big type 'USD 12,000'.",
+    "Section 6: Contact - Simple form or mailto link.",
+    "Use 'glassmorphism' styles for cards over images.",
+    "Ensure all text has sufficient contrast (WCAG AA).",
+    "Do NOT use standard Shadcn cards; customize them to be border-only or glass.",
+    "For the 'Marquee' effect (if used), ensure it is slow and elegant (Serif font)."
+  ],
+  "UNIVERSAL_GUIDELINES": [
+    "Do not use generic centered layouts. Use asymmetry.",
+    "Use 2-3x more padding than usual (e.g., py-32).",
+    "Micro-interactions on every button and link.",
+    "No gradient text unless it is very subtle gold shimmer.",
+    "Dark mode is the ONLY mode for this landing page."
+  ]
+}
