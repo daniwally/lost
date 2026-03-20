@@ -64,7 +64,7 @@ const HeroSection = () => (
         </h1>
         <div className="h-[1px] w-32 bg-gradient-to-r from-gold-400 to-transparent mb-6" />
         <p className="font-body text-lg md:text-xl text-text-secondary max-w-lg mb-8">
-          Propuesta de Consultoría Estratégica para redefinir el posicionamiento y expansión internacional de tu marca.
+          Propuesta de Consultoría Estratégica para redefinir el posicionamiento y expansión internacional de la marca.
         </p>
         <motion.a
           href="#diagnostico"
